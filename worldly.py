@@ -19,8 +19,8 @@ class Worldly:
             if self.use_language in self.messages[entry]:
                 return_language = self.use_language
             elif self.use_language in self.config["fallback"]:
-                    if self.config["fallback"][self.use_language] in self.messages[entry]:
-                        return_language = self.config["fallback"][self.use_language]
+                if self.config["fallback"][self.use_language] in self.messages[entry]:
+                    return_language = self.config["fallback"][self.use_language]
             else:
                 return_language = self.config["master_fallback"]
 
