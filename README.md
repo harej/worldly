@@ -2,6 +2,13 @@
 
 Worldly is a simple module to create easily internationalizable Python code. Instead of using the gettext approach of compiled message files, Worldly reads translations defined in a YAML file, making it easy for others to contribute translations.
 
+## How to install
+
+I don't have a setup utility. Sorry. But this should be fairly straightforward to install:
+
+1. Use your favorite installation utility to install [PyYAML](http://pyyaml.org/) if you do not already have it.
+2. Copy the `worldly` directory to the Python module directory. On Debian, this is `/usr/lib/python3` for Python 3.
+
 ## The basics
 
 Just put your messages in a YAML file (by default, in the same directory as your script, called i18n.yaml):
