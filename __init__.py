@@ -3,7 +3,7 @@ import yaml
 
 class Worldly:
     def __init__(self, filename="i18n.yaml"):
-        with open(filename, "r") as f:
+        with open(filename, "r", encoding="utf-8") as f:
             self.messages = yaml.load(f)
 
         self.use_language = "en"  # default; please override
